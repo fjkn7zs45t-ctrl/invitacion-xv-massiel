@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación XV Años - Massiel Berenice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SECCIÓN 1: PORTADA -->
+    <section class="section portada">
+        <div class="particles" id="particles"></div>
+        <div class="portada-content">
+            <div class="quote-top">
+                <p>Con el corazón lleno de ilusión,<br>comienza uno de los capítulos<br>más especiales de mi vida.</p>
+            </div>
+            <div class="sparkle">✨</div>
+            <div class="book-container">
+                <div class="book">
+                    <div class="book-title">
+                        <h1>MASSIEL</h1>
+                        <p>XV AÑOS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="key-decoration"></div>
+            <p class="invitation-text">Invitación para 2 personas</p>
+            <div class="sparkle">✨</div>
+            <button class="open-btn" onclick="scrollToSection(1)">ABRIR AQUÍ</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: PRESENTACIÓN -->
+    <section class="section presentacion">
+        <div class="background-decoration"></div>
+        <div class="presentacion-content">
+            <div class="name-header">
+                <h2>MASSIEL BERENICE MEJÍA PONCE</h2>
+            </div>
+            <div class="text-block">
+                <p>Hay momentos que llegan para transformar una historia para siempre.</p>
+                <p style="margin-top: 20px;">Hoy, con inmensa alegría, celebro quince años de sueños, aprendizajes, sonrisas y recuerdos inolvidables.</p>
+                <p style="margin-top: 20px;">Deseo compartir este momento tan especial con las personas que han formado parte de mi camino.</p>
+            </div>
+            <div class="photo-frame">
+                <img src="https://via.placeholder.com/300x400?text=Foto+Principal" alt="Foto Massiel">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: PERGAMINO -->
+    <section class="section pergamino">
+        <div class="background-decoration"></div>
+        <div class="parchment">
+            <div class="parchment-content">
+                <p class="parch-text">Con la bendición de Dios</p>
+                <p class="sparkle-text">✨</p>
+                <p class="parch-text" style="margin-top: 20px;">Tengo el honor de invitarte a celebrar conmigo la alegría de mis</p>
+                <h3 style="font-size: 48px; margin: 30px 0; color: #d4af37; font-family: 'Georgia', serif;">XV AÑOS</h3>
+                <p class="parch-text">Tu presencia será el mejor regalo para este día tan importante en mi vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: FECHA Y HORA -->
+    <section class="section fecha">
+        <div class="background-decoration"></div>
+        <div class="fecha-content">
+            <div class="fecha-box">
+                <p class="dia-nombre">SÁBADO</p>
+                <p class="numero-grande">17</p>
+                <p class="mes">OCTUBRE</p>
+                <p class="año">2026</p>
+                <p class="hora">3:00 P.M.</p>
+            </div>
+            <p class="countdown-text">La cuenta regresiva ha comenzado para un día lleno de magia, emociones y recuerdos inolvidables.</p>
+            <div id="countdown" class="countdown-timer"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: PRESENTACIÓN ESPECIAL -->
+    <section class="section presentacion-especial">
+        <div class="background-decoration"></div>
+        <div class="special-content">
+            <h3>Hace quince años comenzó esta historia...</h3>
+            <p>Un pequeño milagro llegó para llenar de amor cada día y dar inicio a una aventura maravillosa.</p>
+            <div class="photo-frame-small">
+                <img src="https://via.placeholder.com/280x350?text=Foto+Bebé" alt="Foto Bebé">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: UBICACIÓN -->
+    <section class="section ubicacion">
+        <div class="background-decoration"></div>
+        <div class="ubicacion-content">
+            <h3>📍 Lugar del Evento</h3>
+            <div class="lugar-box">
+                <p class="lugar-nombre">Colegio de Abogados de Honduras (CAH)</p>
+                <p class="lugar-direccion">2.ª Avenida, carretera CA-5, Colonia 15 de Septiembre, frente al Aeropuerto Internacional Toncontín, Comayagüela, M.D.C.</p>
+            </div>
+            <div class="sparkle">✨</div>
+            <button class="btn-ubicacion" onclick="openMap()">
+                <i class="fas fa-map-marker-alt"></i> CÓMO LLEGAR
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: LLUVIA DE SOBRES -->
+    <section class="section lluvia-sobres">
+        <div class="background-decoration"></div>
+        <div class="sobres-content">
+            <h3>💌 Lluvia de Sobres</h3>
+            <div class="sobres-text">
+                <p>Lo más importante para mí es poder compartir este día con las personas que amo.</p>
+                <p style="margin-top: 15px;">Tu compañía y tus buenos deseos son el regalo más valioso.</p>
+                <p style="margin-top: 15px;">Si deseas brindarme un obsequio, una lluvia de sobres será bienvenida.</p>
+                <p style="margin-top: 15px; font-style: italic;">Gracias por acompañarme en este momento tan importante.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 8: CONFIRMACIÓN -->
+    <section class="section confirmacion">
+        <div class="background-decoration"></div>
+        <div class="confirmacion-content">
+            <h3>✅ Confirmar Asistencia</h3>
+            <p class="confirm-subtitle">Tu presencia hará este momento aún más especial.</p>
+            <div class="confirm-date">
+                <p>Por favor confirma tu asistencia antes del:</p>
+                <p style="font-weight: bold; font-size: 18px; color: #d4af37; margin-top: 10px;">08 DE OCTUBRE DE 2026</p>
+            </div>
+            <div class="sparkle">✨</div>
+            <button class="btn-confirmar" onclick="confirmAsistencia()">
+                CONFIRMAR AQUÍ
+            </button>
+            <div class="contact-info">
+                <p><strong>WhatsApp:</strong></p>
+                <p><a href="https://wa.me/50494990567?text=Hola,%20confirmo%20mi%20asistencia%20a%20los%20XV%20años%20de%20MASSIEL%20BERENICE%20MEJÍA%20PONCE." target="_blank">+504 9499-0567</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 9: CIERRE -->
+    <section class="section cierre">
+        <div class="background-decoration"></div>
+        <div class="cierre-content">
+            <div class="cierre-text">
+                <p>Hace quince años comenzó esta historia...</p>
+                <p style="margin-top: 15px;">Entre sueños, recuerdos, aprendizajes y momentos inolvidables, cada capítulo me ha llevado exactamente hasta aquí.</p>
+                <div class="highlight-text">
+                    <p>Cada sonrisa.</p>
+                    <p>Cada experiencia.</p>
+                    <p>Cada recuerdo.</p>
+                </div>
+                <p style="margin-top: 15px;">Ha formado parte del camino que hoy celebro con inmensa gratitud.</p>
+            </div>
+            <div class="cierre-footer">
+                <h2>MASSIEL BERENICE MEJÍA PONCE</h2>
+                <p>XV AÑOS</p>
+                <p style="margin-top: 20px; font-style: italic;">Gracias por formar parte de este capítulo tan especial.</p>
+                <p style="font-size: 24px; margin-top: 20px;">✨🌿📖💛</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FINAL -->
+    <section class="section final">
+        <div class="background-decoration"></div>
+        <div class="final-content">
+            <h2>Esta no es la última página...</h2>
+            <p>Es el comienzo de una nueva historia.</p>
+            <p style="font-size: 28px; margin-top: 40px;">✨🌿📖💛</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
