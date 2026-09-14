@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- REPRODUCTOR DE MÚSICA -->
+    <div class="music-player">
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/obBXhTwFsKQ?autoplay=1&loop=1&playlist=obBXhTwFsKQ&controls=0&modestbranding=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+        <button id="musicToggle" class="music-toggle" title="Activar/Desactivar música">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
     <!-- SECCIÓN 1: PORTADA -->
-    <section class="section portada">
+    <section class="section portada" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="particles" id="particles"></div>
         <div class="portada-content">
             <div class="quote-top">
@@ -30,7 +39,8 @@
     </section>
 
     <!-- SECCIÓN 2: PRESENTACIÓN -->
-    <section class="section presentacion">
+    <section class="section presentacion" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-container">
             <div class="pergamino">
                 <div class="name-header">
@@ -43,13 +53,14 @@
                 </div>
             </div>
             <div class="photo-frame">
-                <img src="https://via.placeholder.com/300x400?text=Foto+Principal" alt="Foto Massiel">
+                <img src="" alt="Foto Massiel" id="fotoPresentacion">
             </div>
         </div>
     </section>
 
     <!-- SECCIÓN 3: INVITACIÓN -->
-    <section class="section invitacion">
+    <section class="section invitacion" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-grande">
             <div class="parchment-content">
                 <p class="parch-text">Con la bendición de Dios</p>
@@ -62,7 +73,8 @@
     </section>
 
     <!-- SECCIÓN 4: FECHA Y HORA -->
-    <section class="section fecha">
+    <section class="section fecha" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-fecha">
             <div class="fecha-box">
                 <div class="fecha-grid">
@@ -89,20 +101,22 @@
     </section>
 
     <!-- SECCIÓN 5: PRESENTACIÓN ESPECIAL -->
-    <section class="section presentacion-especial">
+    <section class="section presentacion-especial" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-contenedor">
             <div class="special-content">
                 <h3>Hace quince años comenzó esta historia...</h3>
                 <p>Un pequeño milagro llegó para llenar de amor cada día y dar inicio a una aventura maravillosa.</p>
             </div>
             <div class="photo-frame-small">
-                <img src="https://via.placeholder.com/280x350?text=Foto+Bebe" alt="Foto Bebé">
+                <img src="" alt="Foto Bebé" id="fotoBebe">
             </div>
         </div>
     </section>
 
     <!-- SECCIÓN 6: UBICACIÓN -->
-    <section class="section ubicacion">
+    <section class="section ubicacion" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-ubicacion">
             <div class="ubicacion-content">
                 <h3>Lugar del Evento</h3>
@@ -118,7 +132,8 @@
     </section>
 
     <!-- SECCIÓN 7: CONFIRMACIÓN -->
-    <section class="section confirmacion">
+    <section class="section confirmacion" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-confirmacion">
             <div class="confirmacion-content">
                 <h3>Confirmar Asistencia</h3>
@@ -139,7 +154,8 @@
     </section>
 
     <!-- SECCIÓN 8: CIERRE -->
-    <section class="section cierre">
+    <section class="section cierre" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-cierre">
             <div class="cierre-content">
                 <h2>Hace quince años comenzó esta historia...</h2>
@@ -160,7 +176,8 @@
     </section>
 
     <!-- SECCIÓN FINAL -->
-    <section class="section final">
+    <section class="section final" style="background-image: url(''); background-size: cover; background-position: center;">
+        <div class="background-overlay"></div>
         <div class="pergamino-final">
             <div class="final-content">
                 <h2>Esta no es la última página...</h2>

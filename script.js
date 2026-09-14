@@ -1,8 +1,9 @@
-// Inicializar partículas al cargar
+// Inicializar
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
     updateCountdown();
     setInterval(updateCountdown, 1000);
+    setupMusicPlayer();
 });
 
 // Crear partículas flotantes
@@ -30,6 +31,21 @@ function createParticles() {
     }
 }
 
+// Configurar reproductor de música
+function setupMusicPlayer() {
+    const musicToggle = document.getElementById('musicToggle');
+    const iframeMusic = document.querySelector('.music-player iframe');
+    
+    musicToggle.addEventListener('click', () => {
+        musicToggle.classList.toggle('playing');
+    });
+
+    // Auto-añadir clase playing al cargar
+    setTimeout(() => {
+        musicToggle.classList.add('playing');
+    }, 1000);
+}
+
 // Actualizar contador regresivo
 function updateCountdown() {
     const eventDate = new Date('2026-10-17T15:00:00').getTime();
@@ -47,25 +63,25 @@ function updateCountdown() {
             countdownElement.innerHTML = `
                 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; font-size: 16px;">
                     <div style="background: rgba(212, 175, 55, 0.1); padding: 15px; border-radius: 10px;">
-                        <div style="font-size: 24px; font-weight: bold; color: #d4af37;">${days}</div>
+                        <div style="font-size: 24px; font-weight: bold; color: #daa520;">${days}</div>
                         <div style="color: #c9a961; font-size: 12px;">DÍAS</div>
                     </div>
                     <div style="background: rgba(212, 175, 55, 0.1); padding: 15px; border-radius: 10px;">
-                        <div style="font-size: 24px; font-weight: bold; color: #d4af37;">${hours}</div>
+                        <div style="font-size: 24px; font-weight: bold; color: #daa520;">${hours}</div>
                         <div style="color: #c9a961; font-size: 12px;">HORAS</div>
                     </div>
                     <div style="background: rgba(212, 175, 55, 0.1); padding: 15px; border-radius: 10px;">
-                        <div style="font-size: 24px; font-weight: bold; color: #d4af37;">${minutes}</div>
+                        <div style="font-size: 24px; font-weight: bold; color: #daa520;">${minutes}</div>
                         <div style="color: #c9a961; font-size: 12px;">MINUTOS</div>
                     </div>
                     <div style="background: rgba(212, 175, 55, 0.1); padding: 15px; border-radius: 10px;">
-                        <div style="font-size: 24px; font-weight: bold; color: #d4af37;">${seconds}</div>
+                        <div style="font-size: 24px; font-weight: bold; color: #daa520;">${seconds}</div>
                         <div style="color: #c9a961; font-size: 12px;">SEGUNDOS</div>
                     </div>
                 </div>
             `;
         } else {
-            countdownElement.innerHTML = '<p style="color: #d4af37; font-size: 20px; font-weight: bold;">¡El evento está aquí! 🎉</p>';
+            countdownElement.innerHTML = '<p style="color: #daa520; font-size: 20px; font-weight: bold;">¡El evento está aquí!</p>';
         }
     }
 }
@@ -90,4 +106,28 @@ function confirmAsistencia() {
     const message = 'Hola, confirmo mi asistencia a los XV años de MASSIEL BERENICE MEJÍA PONCE.';
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/50494990567?text=${encodedMessage}`, '_blank');
+}
+
+// Función para cambiar imágenes de fondo
+function setBackgroundImage(sectionIndex, imageUrl) {
+    const sections = document.querySelectorAll('.section');
+    if (sections[sectionIndex]) {
+        sections[sectionIndex].style.backgroundImage = `url('${imageUrl}')`;
+    }
+}
+
+// Función para cambiar foto de presentación
+function setProfilePhoto(imageUrl) {
+    const fotoPresentacion = document.getElementById('fotoPresentacion');
+    if (fotoPresentacion) {
+        fotoPresentacion.src = imageUrl;
+    }
+}
+
+// Función para cambiar foto de bebé
+function setPhotoBeautifulMemory(imageUrl) {
+    const fotoBebe = document.getElementById('fotoBebe');
+    if (fotoBebe) {
+        fotoBebe.src = imageUrl;
+    }
 }
